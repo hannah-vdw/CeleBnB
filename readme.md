@@ -57,3 +57,9 @@ As a registered user
 So that I don’t get nicked for trespassing 
 I want to see booked properties as unavailable
 ```
+
+```
+As a registered user
+So that I can hijack someone else’s booking request
+I want to be able to book a property with unapproved requests
+```
