@@ -33,3 +33,9 @@ As a registered user
 So that I can show off my property
 I want to be able to provide a name, description and price.
 ```
+
+```
+As a registered user
+So that my property can be booked
+I want to be able to provide available dates
+```
