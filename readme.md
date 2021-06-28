@@ -45,3 +45,9 @@ As a registered user
 So that I can live the high life
 I would like to request a property for one night
 ```
+
+```
+As a registered user
+So that I can prevent double bookings and wild parties
+I want to approve booking requests
+```
