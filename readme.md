@@ -21,3 +21,9 @@ As a registered user
 So that I can make more money 
 I need to be able to list my property 
 ```
+
+```
+As a registered user 
+So that I can make even more money 
+I want to be able to list multiple properties
+```
