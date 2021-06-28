@@ -39,3 +39,9 @@ As a registered user
 So that my property can be booked
 I want to be able to provide available dates
 ```
+
+```
+As a registered user
+So that I can live the high life
+I would like to request a property for one night
+```
