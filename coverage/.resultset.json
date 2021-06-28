@@ -4,58 +4,27 @@
       "/Users/goncalogordo/Projects/CelebnB/app.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
-          1,
           null,
           1,
-          1,
-          null,
           1,
           0,
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/test_page_spec.rb": {
+        "lines": [
           1,
+          1,
+          0,
+          0,
           null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          8,
-          7,
-          null,
-          1,
-          1,
-          null,
-          8,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
           null
         ]
       }
     },
-    "timestamp": 1624632899
+    "timestamp": 1624896156
   }
 }
