@@ -51,3 +51,9 @@ As a registered user
 So that I can prevent double bookings and wild parties
 I want to approve booking requests
 ```
+
+```
+As a registered user
+So that I don’t get nicked for trespassing 
+I want to see booked properties as unavailable
+```
