@@ -27,3 +27,9 @@ As a registered user
 So that I can make even more money 
 I want to be able to list multiple properties
 ```
+
+```
+As a registered user
+So that I can show off my property
+I want to be able to provide a name, description and price.
+```
