@@ -3,23 +3,22 @@
 A platform for celebrities to list their mansions for short term stays.
 
 ## MVP
+```
+As a registered user
+So that I can go on holiday
+I want to view all the properties
+```
 
 ```
 As a registered user 
 So that I can make more money 
-I need to be able to list my property 
-```
-
-```
-As a registered user
-So that I can show off my property
-I want to be able to provide a name, description and price
+I want to add a property with a name, description and price
 ```
 
 ```
 As a registered user
 So that I can live the high life
-I would like to request a property for one night
+I would like to book a property for one night
 ```
 
 
