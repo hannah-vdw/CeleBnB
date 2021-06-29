@@ -6,15 +6,17 @@ class Celebnb < Sinatra::Base
   end
 
   get '/properties' do
-    erb :'properties/list'
-  end
-
-  post '/properties' do
-    "Goncalo's mansion A very nice place 1000"
+    @properties = Property.all
+    erb :properties
   end
 
   get '/properties/new' do
-    erb :'properties/new'
+    erb :new
+  end
+
+  post '/properties' do
+    Property.add(name: params[:name], description: params[:description], price: params[:price])
+    redirect '/properties'
   end
 
   run! if app_file == $0
