@@ -1,6 +1,6 @@
 class Property
   def self.all
-    if ENV['ENVIRONMENT'] = 'test'
+    if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: 'celebnb_test')
     else
       connection = PG.connect(dbname: 'celebnb')
