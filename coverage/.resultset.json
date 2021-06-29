@@ -4,13 +4,35 @@
       "/Users/goncalogordo/Projects/CelebnB/app.rb": {
         "lines": [
           1,
+          1,
+          1,
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/goncalogordo/Projects/CelebnB/lib/property.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
           0,
           null,
           null,
-          1,
+          2,
+          null,
           null
         ]
       },
@@ -18,13 +40,42 @@
         "lines": [
           1,
           1,
-          0,
-          0,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/view_properties_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/goncalogordo/Projects/CelebnB/spec/property_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1624896156
+    "timestamp": 1624976582
   }
 }

@@ -1,0 +1,7 @@
+<h1>List of all CeleBnB properties</h1>
+<br>
+<ul>
+  <% @properties.each do |property| %>
+    <li> <%= property['name'] %> - <%= property['description'] %> - <%= property['price'] %> </li>
+  <% end %>
+</ul>
