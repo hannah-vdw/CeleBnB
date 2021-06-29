@@ -2,6 +2,27 @@
 
 A platform for celebrities to list their mansions for short term stays.
 
+## MVP
+
+```
+As a registered user 
+So that I can make more money 
+I need to be able to list my property 
+```
+
+```
+As a registered user
+So that I can show off my property
+I want to be able to provide a name, description and price
+```
+
+```
+As a registered user
+So that I can live the high life
+I would like to request a property for one night
+```
+
+
 ## User stories
 
 ```
@@ -17,18 +38,6 @@ I need to sign in as a registered user
 ```
 
 ```
-As a registered user
-So that I can show off my property
-I want to be able to provide a name, description and price.
-```
-
-```
-As a registered user 
-So that I can make more money 
-I need to be able to list my property 
-```
-
-```
 As a registered user 
 So that I can make even more money 
 I want to be able to list multiple properties
@@ -38,12 +47,6 @@ I want to be able to list multiple properties
 As a registered user
 So that my property can be booked
 I want to be able to provide available dates
-```
-
-```
-As a registered user
-So that I can live the high life
-I would like to request a property for one night
 ```
 
 ```
