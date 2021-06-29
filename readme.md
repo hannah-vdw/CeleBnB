@@ -19,7 +19,7 @@ I want to be able to provide a name, description and price
 ```
 As a registered user
 So that I can live the high life
-I would like to request a property for one night
+I would like to book a property for one night
 ```
 
 
