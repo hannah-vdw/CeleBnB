@@ -1,9 +1,10 @@
+<h1>List of all CeleBnB properties</h1>
+<br>
+
 <form action='/properties/new' method='get'> 
   <button type='submit'>Add a Property</button>
 </form>
 
-<h1>List of all CeleBnB properties</h1>
-<br>
 <ul>
   <% @properties.each do |property| %>
     <li> <%= property['name'] %> - <%= property['description'] %> - <%= property['price'] %> </li>

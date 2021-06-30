@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require 'pg'
+require_relative './lib/property'
 
 class Celebnb < Sinatra::Base
   get '/test' do
@@ -18,6 +20,6 @@ class Celebnb < Sinatra::Base
     Property.add(name: params[:name], description: params[:description], price: params[:price])
     redirect '/properties'
   end
-
+  
   run! if app_file == $0
 end

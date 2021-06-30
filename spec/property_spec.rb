@@ -1,6 +1,6 @@
 require 'property'
 
-describe Property do
+  describe Property do
     describe '.all' do
       it 'returns all properties' do
         add_rows_to_test_database
@@ -8,10 +8,10 @@ describe Property do
         expect(properties.ntuples).to eq 2
       end
     end
+  
     describe '.add' do
         it 'adds a new property' do
             connection = PG.connect(dbname: 'celebnb_test')
-            # connection.exec("TRUNCATE properties;")
             name = "Goncalos mansion"
             description = "A very nice place"
             price = 1000
