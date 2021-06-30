@@ -1,4 +1,4 @@
-require 'property'
+# require 'property'
 
   describe Property do
     describe '.all' do
