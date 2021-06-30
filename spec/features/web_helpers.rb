@@ -19,3 +19,10 @@ def add_two_properties
   fill_in('price', with: 2000)
   click_button('Submit')
 end
+
+def sign_up_user 
+  username = 'bozzaj10'
+  email = 'borisj@example.com'
+  password = 'blondeshavemorefun'
+  User.signup(username: username, email: email, password: password)
+end
