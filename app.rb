@@ -4,6 +4,8 @@ require_relative './lib/property'
 require_relative './lib/user'
 
 class Celebnb < Sinatra::Base
+  enable :sessions
+
   get '/test' do
     'Test page'
   end
@@ -14,10 +16,12 @@ class Celebnb < Sinatra::Base
 
   post '/users' do
     @user = User.signup(username: params[:username], email: params[:email], password: params[:password])
+    session[:username] = params[:username]
     redirect '/sessions/new'
   end
 
   get '/sessions/new' do
+    @username = session[:username]
     erb :'sessions/new'
   end
 
