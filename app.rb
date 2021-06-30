@@ -13,8 +13,18 @@ class Celebnb < Sinatra::Base
   end
 
   post '/properties/:id' do
-    Property.book params[:id]
+    Property.book(params[:id])
+    
   end
 
+  get '/properties/new' do
+    erb :new
+  end
+
+  post '/properties' do
+    Property.add(name: params[:name], description: params[:description], price: params[:price])
+    redirect '/properties'
+  end
+  
   run! if app_file == $0
 end
