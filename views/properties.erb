@@ -5,6 +5,8 @@
   <button type='submit'>Add a Property</button>
 </form>
 
+<h2>Where are you heading to next, <%= @signed_in_user %>?</h2>
+
 <ul>
   <% @properties.each do |property| %>
     <li> <%= property['name'] %> - <%= property['description'] %> - <%= property['price'] %>

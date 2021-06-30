@@ -2,6 +2,8 @@
 
 A platform for celebrities to list their mansions for short term stays.
 
+Parisian penthouses, Cotswold Cottages and Mediterranean Mansions. Your one stop pass to the most luxurious and exclusive residences worldwide! Welcome .......
+
 ## MVP
 ```
 As a registered user
