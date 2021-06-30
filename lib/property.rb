@@ -7,7 +7,7 @@ class Property
         end
 
         result = connection.exec("INSERT INTO properties (name, description, price) VALUES('#{name}', '#{description}', '#{price}');")
-    end
+    
   end
 
   def self.all
