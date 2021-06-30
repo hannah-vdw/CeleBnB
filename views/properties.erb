@@ -7,6 +7,11 @@
 
 <ul>
   <% @properties.each do |property| %>
-    <li> <%= property['name'] %> - <%= property['description'] %> - <%= property['price'] %> </li>
+    <li> <%= property['name'] %> - <%= property['description'] %> - <%= property['price'] %>
+      <form action="/properties/<%=property["id"]%>" method="post">
+        <input id="<%=property["id"]%>" type="submit" value="book">
+      </form>
+    </li>
   <% end %>
 </ul>
+

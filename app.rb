@@ -12,6 +12,11 @@ class Celebnb < Sinatra::Base
     erb :properties
   end
 
+  post '/properties/:id' do
+    Property.book(params[:id])
+    
+  end
+
   get '/properties/new' do
     erb :new
   end
