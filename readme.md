@@ -18,7 +18,7 @@ I want to add a property with a name, description and price
 ```
 As a registered user
 So that I can live the high life
-I would like to book a property for one night
+I would like to book a property
 ```
 
 
@@ -42,6 +42,19 @@ So that I can see my listings
 I need to sign in as a registered user
 ```
 
+
+```
+As a registered user
+So that I can ditch my partner
+I want to book a property for one night
+```
+
+```
+As a registered user
+So that I can prevent double bookings and wild parties
+I want to approve booking requests
+```
+
 ```
 As a registered user
 So that my property can be booked
@@ -56,12 +69,7 @@ I want to be able to book a property with unapproved requests
 
 ```
 As a registered user
-So that I can prevent double bookings and wild parties
-I want to approve booking requests
-```
-
-```
-As a registered user
 So that I don’t get nicked for trespassing 
 I want to see booked properties as unavailable
 ```
+
