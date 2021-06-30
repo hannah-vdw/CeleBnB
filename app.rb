@@ -12,5 +12,9 @@ class Celebnb < Sinatra::Base
     erb :properties
   end
 
+  post '/properties/:id' do
+    Property.book params[:id]
+  end
+
   run! if app_file == $0
 end
