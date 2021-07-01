@@ -28,12 +28,13 @@
     end
 
   describe '.book' do
-    it 'allows user to book' do
+    it 'allows the user to book' do
       add_rows_to_test_database
       connection = PG.connect(dbname: "celebnb_test")
       result = connection.exec("SELECT * FROM properties WHERE name = 'A Castle';")
-      message = Property.book(result.first['id'])
-      expect(message).to eq 'Your booking of A Castle has been confirmed, enjoy!'
+      Property.book(id: result.first['id'], booking_date: '06/07/2021')
+      booking_result = connection.exec_params("SELECT * FROM bookings WHERE property_id = '$1';", [result.first['id']])
+      expect(booking_result.first['booking_date']).to eq('06/07/2021')
     end
   end
 end

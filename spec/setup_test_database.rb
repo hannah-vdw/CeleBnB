@@ -2,7 +2,8 @@ require 'pg'
 
 def setup_test_database
   connection = PG.connect(dbname: 'celebnb_test')
-  connection.exec("TRUNCATE properties;")
+  connection.exec("DELETE FROM bookings;")
+  connection.exec("DELETE FROM properties;")
 end
 
 def add_rows_to_test_database

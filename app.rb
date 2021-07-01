@@ -38,11 +38,15 @@ class Celebnb < Sinatra::Base
   end
 
   post '/properties/:id' do
-    Property.book(params[:id])
+    Property.book(id: params[:id], booking_date: params[:booking_date])
   end
 
   get '/properties/new' do
     erb :new
+  end
+
+  get '/properties/:id' do
+    erb :book
   end
 
   post '/properties' do

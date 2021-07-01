@@ -1,0 +1,1 @@
+CREATE TABLE bookings(id SERIAL PRIMARY KEY, booking_date DATE, property_id INTEGER REFERENCES properties(id));
