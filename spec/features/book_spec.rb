@@ -1,7 +1,9 @@
 feature 'can book property' do
     scenario 'user can book a property they like' do
         add_rows_to_test_database
-        visit('/properties')
+        sign_up_user
+        visit('/sessions/new')
+        sign_in_user
         connection = PG.connect(dbname: "celebnb_test")
         result = connection.exec("SELECT * FROM properties WHERE name = 'A Castle';")
         click_button "#{result.first['id']}"
