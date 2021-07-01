@@ -17,7 +17,7 @@ class User
             connection = PG.connect(dbname: 'celebnb')
         end
 
-        result = connection.exec("INSERT INTO users (username, email, password) VALUES('#{username}', '#{email}', '#{password}');")
+        result = connection.exec_params("INSERT INTO users (username, email, password) VALUES($1, $2, $3);", [username, email, password])
     end
 
     def self.signin(username:, password:)
@@ -27,7 +27,7 @@ class User
             connection = PG.connect(dbname: 'celebnb')
         end
 
-        result = connection.exec("SELECT * FROM users WHERE username = '#{username}' AND password = '#{password}';")
+        result = connection.exec_params("SELECT * FROM users WHERE username = $1 AND password = $2;", [username, password])
 
         if result.ntuples == 0 
             nil
