@@ -17,12 +17,17 @@ feature 'Add properties' do
   scenario 'add multiple properties with name, description and price' do
     add_two_properties
     expect(page).to have_current_path('/properties')
-    expect(page).to have_content("Goncalos mansion")
-    expect(page).to have_content("A very nice place")
-    expect(page).to have_content(1000)
-    expect(page).to have_content("The Niesoth Estate")
-    expect(page).to have_content("A super nice place")
-    expect(page).to have_content(2000)
+    expect(page).to have_content "Goncalos mansion" && "A very nice place" && 1000
+    expect(page).to have_content "The Niesoth Estate" && "A super nice place" && 2000
   end
+
+  # As a registered user
+  # So that my property can be booked
+  # I want to be able to provide available dates
+  scenario 'provide available dates' do
+    add_two_properties
+    expect(page).to have_content '01/07/2021' && '07/07/2021' && '10/08/2021' && '17/08/2021'
+  end
+
 end
 

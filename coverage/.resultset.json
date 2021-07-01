@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/goncalogordo/Projects/CelebnB/app.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/app.rb": {
         "lines": [
           1,
           1,
@@ -31,8 +31,8 @@
           null,
           null,
           1,
-          8,
-          8,
+          12,
+          12,
           null,
           null,
           1,
@@ -40,12 +40,12 @@
           null,
           null,
           1,
-          3,
+          5,
           null,
           null,
           1,
-          3,
-          3,
+          5,
+          5,
           null,
           null,
           null,
@@ -53,45 +53,28 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/lib/property.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/lib/property.rb": {
         "lines": [
           1,
           1,
-          4,
-          4,
+          5,
+          5,
           null,
           0,
           null,
           null,
-          4,
+          5,
           null,
           null,
           1,
-          9,
-          9,
+          13,
+          13,
           null,
           0,
           null,
           null,
-          9,
+          13,
           null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          0,
-          null,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/goncalogordo/Projects/CelebnB/lib/user.rb": {
-        "lines": [
-          1,
           null,
           1,
           2,
@@ -99,6 +82,23 @@
           null,
           0,
           null,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          0,
+          null,
           null,
           2,
           null,
@@ -106,7 +106,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/features/add_properties_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -129,16 +129,21 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           1,
-          1,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/features/book_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/book_spec.rb": {
         "lines": [
           1,
           1,
@@ -154,7 +159,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/features/sign_up_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/sign_up_spec.rb": {
         "lines": [
           null,
           null,
@@ -173,7 +178,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/features/test_page_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/test_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -183,7 +188,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/features/view_properties_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/view_properties_spec.rb": {
         "lines": [
           null,
           null,
@@ -199,7 +204,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/property_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/property_spec.rb": {
         "lines": [
           null,
           null,
@@ -221,8 +226,12 @@
           1,
           1,
           1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
@@ -239,7 +248,7 @@
           null
         ]
       },
-      "/Users/goncalogordo/Projects/CelebnB/spec/user_spec.rb": {
+      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -261,6 +270,6 @@
         ]
       }
     },
-    "timestamp": 1625064772
+    "timestamp": 1625137697
   }
 }
