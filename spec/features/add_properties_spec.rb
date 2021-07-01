@@ -33,6 +33,11 @@ feature 'Add properties' do
   # So that my property can be booked
   # I want to be able to provide available dates
   scenario 'provide available dates' do
+    visit('/')
+    sign_up_user
+    visit('/sessions/new')
+    sign_in_user
+    click_button('Add a Property')
     add_two_properties
     expect(page).to have_content '01/07/2021' && '07/07/2021' && '10/08/2021' && '17/08/2021'
   end
