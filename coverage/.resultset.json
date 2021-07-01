@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/app.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/app.rb": {
         "lines": [
           1,
           1,
@@ -26,14 +26,14 @@
           null,
           null,
           1,
-          2,
-          2,
+          4,
+          4,
           null,
           null,
           1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
           null,
           null,
           1,
@@ -60,7 +60,7 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/lib/property.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/lib/property.rb": {
         "lines": [
           1,
           1,
@@ -96,43 +96,43 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/lib/user.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/lib/user.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
+          4,
+          4,
+          4,
+          4,
           null,
           null,
           null,
           1,
-          3,
-          3,
+          5,
+          5,
           null,
           0,
           null,
           null,
-          3,
+          5,
           null,
           null,
           1,
-          2,
-          2,
+          4,
+          4,
           null,
           0,
           null,
           null,
-          2,
+          4,
           null,
-          2,
+          4,
           null,
           null,
-          2,
+          4,
           null,
           null,
           null,
@@ -140,7 +140,7 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/add_properties_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -153,11 +153,19 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -172,7 +180,7 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/book_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/book_spec.rb": {
         "lines": [
           1,
           1,
@@ -188,28 +196,7 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/sign_in_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/sign_up_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/sign_in_spec.rb": {
         "lines": [
           null,
           null,
@@ -224,21 +211,13 @@
           1,
           1,
           1,
-          null,
-          null
-        ]
-      },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/test_page_spec.rb": {
-        "lines": [
-          1,
-          1,
           1,
           1,
           null,
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/features/view_properties_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/sign_up_spec.rb": {
         "lines": [
           null,
           null,
@@ -250,11 +229,40 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/property_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/test_page_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/view_properties_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/property_spec.rb": {
         "lines": [
           null,
           null,
@@ -294,7 +302,7 @@
           null
         ]
       },
-      "/Users/admin/Desktop/MAKERS/W7-MakersBnb/CeleBnB/spec/user_spec.rb": {
+      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -324,6 +332,6 @@
         ]
       }
     },
-    "timestamp": 1625068224
+    "timestamp": 1625136988
   }
 }
