@@ -1,12 +1,13 @@
 class Property
-  def self.add(name:, description:, price:)
+  
+  def self.add(name:, description:, price:, available_from:, available_until:)
         if ENV['ENVIRONMENT'] == 'test'
             connection = PG.connect(dbname: 'celebnb_test')
         else
             connection = PG.connect(dbname: 'celebnb')
         end
 
-        result = connection.exec_params("INSERT INTO properties (name, description, price) VALUES($1, $2, $3);", [name, description, price])
+        result = connection.exec_params("INSERT INTO properties (name, description, price, available_from, available_until) VALUES($1, $2, $3, $4, $5);", [name, description, price, available_from, available_until])
   end
 
   def self.all
