@@ -1,11 +1,14 @@
 <h1>List of all CeleBnB properties</h1>
 <br>
 
-<form action='/properties/new' method='get'> 
-  <button type='submit'>Add a Property</button>
-</form>
-
-<h2>Where are you heading to next, <%= @signed_in_user %>?</h2>
+<% if @signed_in_user != nil %>
+  <form action='/properties/new' method='get'> 
+    <button type='submit'>Add a Property</button>
+  </form>
+  <h2>Where are you heading to next, <%= @signed_in_user %>?</h2>
+<% else %>
+  <h2>Where are you heading to next?</h2>
+<% end %>
 
 <ul>
   <% @properties.each do |property| %>
