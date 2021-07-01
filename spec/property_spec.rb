@@ -15,11 +15,15 @@
           name = "Goncalos mansion"
           description = "A very nice place"
           price = 1000
-          Property.add(name: name, description: description, price: price)
+          available_from = "01/07/2021"
+          available_until = "07/07/2021"
+          Property.add(name: name, description: description, price: price, available_from: available_from, available_until: available_until)
           result = connection.exec("SELECT * FROM properties;")
           expect(result[0]['name']).to eq("Goncalos mansion")
           expect(result[0]['description']).to eq("A very nice place")
           expect(result[0]['price']).to eq("1000")
+          expect(result[0]['available_from']).to eq("01/07/2021")
+          expect(result[0]['available_until']).to eq("07/07/2021")
       end
     end
 

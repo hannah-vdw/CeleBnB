@@ -46,7 +46,7 @@ class Celebnb < Sinatra::Base
   end
 
   post '/properties' do
-    Property.add(name: params[:name], description: params[:description], price: params[:price])
+    Property.add(name: params[:name], description: params[:description], price: params[:price], available_from: params[:available_from], available_until: params[:available_until])
     redirect '/properties'
   end
 
