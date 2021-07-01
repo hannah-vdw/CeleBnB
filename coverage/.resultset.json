@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/app.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/app.rb": {
         "lines": [
           1,
           1,
@@ -60,7 +60,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/lib/property.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/lib/property.rb": {
         "lines": [
           1,
           1,
@@ -96,7 +96,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/lib/user.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/lib/user.rb": {
         "lines": [
           1,
           null,
@@ -140,7 +140,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/add_properties_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -180,7 +180,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/book_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/book_spec.rb": {
         "lines": [
           1,
           1,
@@ -196,7 +196,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/sign_in_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/sign_in_spec.rb": {
         "lines": [
           null,
           null,
@@ -217,7 +217,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/sign_up_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/sign_up_spec.rb": {
         "lines": [
           null,
           null,
@@ -236,7 +236,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/test_page_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/test_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -246,7 +246,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/features/view_properties_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/features/view_properties_spec.rb": {
         "lines": [
           null,
           null,
@@ -262,7 +262,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/property_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/property_spec.rb": {
         "lines": [
           null,
           null,
@@ -302,7 +302,7 @@
           null
         ]
       },
-      "/Users/anitareadman/Desktop/group-challenges/CelebnB/spec/user_spec.rb": {
+      "/Users/goncalogordo/Projects/CelebnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -332,6 +332,6 @@
         ]
       }
     },
-    "timestamp": 1625136988
+    "timestamp": 1625137987
   }
 }

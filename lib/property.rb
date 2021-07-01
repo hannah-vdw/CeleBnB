@@ -6,7 +6,7 @@ class Property
             connection = PG.connect(dbname: 'celebnb')
         end
 
-        result = connection.exec("INSERT INTO properties (name, description, price) VALUES('#{name}', '#{description}', '#{price}');")
+        result = connection.exec_params("INSERT INTO properties (name, description, price) VALUES($1, $2, $3);", [name, description, price])
   end
 
   def self.all
@@ -25,7 +25,7 @@ class Property
     else
       connection = PG.connect(dbname: 'celebnb')
     end
-    result = connection.exec("SELECT * FROM properties WHERE id = '#{id}';")
+    result = connection.exec_params("SELECT * FROM properties WHERE id = $1;", [id])
     "Your booking of #{result.first['name']} has been confirmed, enjoy!"
   end
 end
