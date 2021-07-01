@@ -12,10 +12,13 @@
 
 <ul>
   <% @properties.each do |property| %>
-    <li> <%= property['name'] %> - <%= property['description'] %> - £<%= property['price']%>. Available from <%=property['available_from']%> - <%=property['available_until']%>
+    <li> <%= property['name'] %> - <%= property['description'] %> - £<%= property['price']%>. 
+    Available from <%=property['available_from']%> - <%=property['available_until']%>
+    <% if @signed_in_user != nil %>
       <form action="/properties/<%=property["id"]%>" method="post">
         <input id="<%=property["id"]%>" type="submit" value="book">
       </form>
+    <% end %>
     </li>
   <% end %>
 </ul>
