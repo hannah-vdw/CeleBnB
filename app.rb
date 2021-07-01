@@ -25,8 +25,15 @@ class Celebnb < Sinatra::Base
     erb :'sessions/new'
   end
 
+  post '/sessions' do
+    user = User.signin(username: params[:username], password: params[:password])
+    session[:signed_in_user] = user.username
+    redirect '/properties'
+  end
+
   get '/properties' do
     @properties = Property.all
+    @signed_in_user = session[:signed_in_user]
     erb :properties
   end
 
