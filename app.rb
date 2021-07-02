@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'pg'
 require_relative './lib/property'
 require_relative './lib/user'
+require_relative './lib/booking'
 
 class Celebnb < Sinatra::Base
   enable :sessions
@@ -58,6 +59,7 @@ class Celebnb < Sinatra::Base
   end
 
   get '/requests' do
+    @user_booking = Booking.get(user_id: session[:signed_in_user_id])
     @signed_in_user = session[:signed_in_user]
     erb :'bookings/requests'
   end
