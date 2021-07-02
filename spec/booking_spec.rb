@@ -12,8 +12,8 @@ describe Booking do
       booking_result = connection.exec_params("SELECT * FROM bookings WHERE property_id = $1;", [property_result.first['id']])
       booking = Booking.get(user_id: user_result.first['id'])
 
-      expect(booking.date).to eq '2021-06-07'
-      expect(booking.user.username).to eq user_result.first['username']
+      expect(booking.booking_date).to eq '2021-06-07'
+      expect(booking.username).to eq user_result.first['username']
       expect(booking.property_name).to eq property_result.first['name']
     end
   end
