@@ -28,6 +28,7 @@ class Celebnb < Sinatra::Base
   post '/sessions' do
     user = User.signin(username: params[:username], password: params[:password])
     session[:signed_in_user] = user.username
+    session[:signed_in_user_id] = user.id
     redirect '/properties'
   end
 
@@ -38,7 +39,7 @@ class Celebnb < Sinatra::Base
   end
 
   post '/properties/:id' do
-    Property.book(id: params[:id], booking_date: params[:booking_date])
+    Property.book(id: params[:id], booking_date: params[:booking_date], user_id: session[:signed_in_user_id])
     redirect '/requests'
   end
 
