@@ -15,7 +15,7 @@
     <li> <%= property['name'] %> - <%= property['description'] %> - £<%= property['price']%>. 
     Available from <%=property['available_from']%> - <%=property['available_until']%>
     <% if @signed_in_user != nil %>
-      <form action="/properties/<%=property["id"]%>" method="post">
+      <form action="/properties/<%=property["id"]%>" method="get">
         <input id="<%=property["id"]%>" type="submit" value="book">
       </form>
     <% end %>
