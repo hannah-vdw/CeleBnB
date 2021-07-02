@@ -1,0 +1,1 @@
+ALTER TABLE bookings ADD user_id INTEGER REFERENCES users(id);
