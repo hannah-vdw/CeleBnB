@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'pg'
 require_relative './lib/property'
 require_relative './lib/user'
+require_relative './lib/booking'
 
 class Celebnb < Sinatra::Base
   enable :sessions
@@ -28,21 +29,28 @@ class Celebnb < Sinatra::Base
   post '/sessions' do
     user = User.signin(username: params[:username], password: params[:password])
     session[:signed_in_user] = user.username
+    session[:signed_in_user_id] = user.id
     redirect '/properties'
   end
 
   get '/properties' do
     @properties = Property.all
     @signed_in_user = session[:signed_in_user]
-    erb :properties
+    erb :'properties/list'
   end
 
   post '/properties/:id' do
-    Property.book(params[:id])
+    Property.book(id: params[:id], booking_date: params[:booking_date], user_id: session[:signed_in_user_id])
+    redirect '/requests'
   end
 
   get '/properties/new' do
-    erb :new
+    erb :'properties/new'
+  end
+
+  get '/properties/:id' do
+    @id = params[:id]
+    erb :'bookings/book'
   end
 
   post '/properties' do
@@ -50,6 +58,11 @@ class Celebnb < Sinatra::Base
     redirect '/properties'
   end
 
+  get '/requests' do
+    @user_booking = Booking.get(user_id: session[:signed_in_user_id])
+    @signed_in_user = session[:signed_in_user]
+    erb :'bookings/requests'
+  end
   
   run! if app_file == $0
 end
