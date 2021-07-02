@@ -34,19 +34,21 @@ class Celebnb < Sinatra::Base
   get '/properties' do
     @properties = Property.all
     @signed_in_user = session[:signed_in_user]
-    erb :properties
+    erb :'properties/list'
   end
 
   post '/properties/:id' do
     Property.book(id: params[:id], booking_date: params[:booking_date])
+    redirect '/requests'
   end
 
   get '/properties/new' do
-    erb :new
+    erb :'properties/new'
   end
 
   get '/properties/:id' do
-    erb :book
+    @id = params[:id]
+    erb :'bookings/book'
   end
 
   post '/properties' do
@@ -54,6 +56,10 @@ class Celebnb < Sinatra::Base
     redirect '/properties'
   end
 
+  get '/requests' do
+    @signed_in_user = session[:signed_in_user]
+    erb :'bookings/requests'
+  end
   
   run! if app_file == $0
 end

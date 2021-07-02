@@ -32,9 +32,9 @@
       add_rows_to_test_database
       connection = PG.connect(dbname: "celebnb_test")
       result = connection.exec("SELECT * FROM properties WHERE name = 'A Castle';")
-      Property.book(id: result.first['id'], booking_date: '06/07/2021')
-      booking_result = connection.exec_params("SELECT * FROM bookings WHERE property_id = '$1';", [result.first['id']])
-      expect(booking_result.first['booking_date']).to eq('06/07/2021')
+      Property.book(id: result.first['id'], booking_date: '2021-06-07')
+      booking_result = connection.exec_params("SELECT * FROM bookings WHERE property_id = $1;", [result.first['id']])
+      expect(booking_result.first['booking_date']).to eq('2021-06-07')
     end
   end
 end
